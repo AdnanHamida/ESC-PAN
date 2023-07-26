@@ -1,3 +1,7 @@
-# ESC-PAN
+# ESC-PAN 
+### Presented in 2022 IEEE International Conference on Image Processing (ICIP)
+### Published in IEEE Access
 
-This is a repositary for the submitted paper to ICIP 2022 "Efficient Self-Calibrated Convolution for Real-time Image Super-Resolution". Code is under construction 🔨. 
+## [IEEE Access paper](https://ieeexplore.ieee.org/document/10188817) | [ICIP paper](https://ieeexplore.ieee.org/document/9897861)
+## Efficient Self-Calibrated Pixel- Attention Network (ESC-PAN)
+Authors: Adnan Hamida, Motaz Alfarraj, Salam A. Zummo
