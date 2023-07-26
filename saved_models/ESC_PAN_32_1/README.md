@@ -1,1 +1,0 @@
-Smaller model (ICIP version)

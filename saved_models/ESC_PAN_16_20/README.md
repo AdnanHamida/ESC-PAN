@@ -1,1 +1,0 @@
-Bigger model (IEEE Access)
