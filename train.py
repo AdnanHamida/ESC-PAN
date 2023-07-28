@@ -6,6 +6,7 @@ from codes.train_function import *
 from models_archs import *
 import os
 
+# fixing seed for reproducibility
 seed = 1993
 torch.manual_seed(seed)
 torch.backends.cudnn.deterministic = True
@@ -16,9 +17,9 @@ random.seed(seed)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-scale = 4#int(input('\nScale: '))
-C = 32#int(input('C:'))
-d = 1#int(input('d:'))
+scale = int(input('\nScale: '))
+C = int(input('C:'))
+d = int(input('d:'))
 model = ESC_PAN(scale,C,d).to(device)
 model = torch.nn.DataParallel(model, device_ids=range(torch.cuda.device_count()))
 save_path= "./saved_models/ESC_PAN_"+str(model.module.C)+"_"+str(model.module.d)+"/testx"+str(model.module.scale_factor)+".pth"
